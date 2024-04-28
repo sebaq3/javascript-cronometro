@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cronometro-container {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.esfera {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: relative;
+  margin: 0 auto;
+}
+
+.numero {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  transform: translate(-50%, -50%); /* Añadido para centrar el número */
+}
+
+.aguja {
+  position: absolute;
+  width: 2px;
+  height: 90px;
+  background-color: red;
+  top: calc(50% - 90px);
+  left: 50%;
+  transform-origin: bottom;
+  transform: translateX(-50%);
+}
+
+.botones {
+  position: relative;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
